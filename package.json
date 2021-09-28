@@ -1,12 +1,21 @@
 {
-  "name": "@juliusniedermeier/webcomponent",
-  "version": "1.0.0",
-  "description": "",
-  "main": "cli.js",
-  "author": "JuliusNiedermeier",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^5.54.0"
-  },
-  "dependencies": {}
+    "name": "@juliusniedermeier/webcomponent",
+    "version": "1.0.0",
+    "description": "Lightweight web component tooling",
+    "main": "cli.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JuliusNiedermeier/webcomponent.git"
+    },
+    "keywords": [],
+    "author": "Julius Niedermeier",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JuliusNiedermeier/webcomponent/issues"
+    },
+    "homepage": "https://github.com/JuliusNiedermeier/webcomponent#readme",
+    "devDependencies": {
+        "webpack": "^5.54.0"
+    },
+    "dependencies": {}
 }
