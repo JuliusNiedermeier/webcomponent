@@ -1,23 +1,13 @@
 const path = require('path')
-const fs = require('fs')
+const requireOptional = require('./requireOptional')
 
-const webcomponentConfigPath = './webcomponent.config.js'
-
-function requireOptional(path) {
-    if (fs.existsSync(path)) {
-        return require(path)
-    } else {
-        return {}
-    }
-}
-
-const defaultConfig = {
+const config = {
     mode: 'production',
-    entry: './app.js',
+    entry: path.resolve(__dirname, '..', 'src', 'index.js'),
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '..', 'dist'),
         filename: 'bundle.js'
     }
 }
 
-module.exports = { ...defaultConfig, ...requireOptional(webcomponentConfigPath) }
+module.exports = { ...config, ...requireOptional(path.resolve(__dirname, '..', 'webcomponent.config.js')).webpack }
