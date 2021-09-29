@@ -17,6 +17,6 @@
         "webpack": "^5.55.1"
     },
     "bin": {
-        "webcomponent": "./build.js"
+        "webcomponent": "./src/build.js"
     }
 }
