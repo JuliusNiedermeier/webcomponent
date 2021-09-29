@@ -1,5 +1,5 @@
 const path = require('path')
-const { findProjectRootDirectory } = require('./util')
+const findProjectRootDirectory = require('./util/findProjectRootDirectory')
 
 module.exports = {
     mode: 'production',

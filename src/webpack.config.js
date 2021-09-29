@@ -1,5 +1,7 @@
 const webpackDefaultConfig = require('./webpack-default.config')
-const { requireOptionalModule, findProjectRootDirectory, deepMerge } = require('./util')
+const requireOptionalModule = require('./util/requireOptionalModule')
+const findProjectRootDirectory = require('./util/findProjectRootDirectory')
+const deepMerge = require('./util/deepMerge')
 const path = require('path')
 
 module.exports = deepMerge(
