@@ -1,4 +1,4 @@
-module.exports.deepMerge = function (base, inputObject) {
+module.exports = function (base, inputObject) {
     const result = base
 
     for (let key in inputObject) {
@@ -11,7 +11,7 @@ module.exports.deepMerge = function (base, inputObject) {
         }
 
         else if (typeof base[key] === 'object' && typeof inputObject[key] === 'object') {
-            result[key] = module.exports.deepMerge(base[key], inputObject[key])
+            result[key] = module.exports(base[key], inputObject[key])
         }
     }
 
