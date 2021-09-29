@@ -13,9 +13,8 @@
         "url": "https://github.com/JuliusNiedermeier/webcomponent/issues"
     },
     "homepage": "https://github.com/JuliusNiedermeier/webcomponent#readme",
-    "devDependencies": {},
     "dependencies": {
-        "webpack": "^5.54.0"
+        "webpack": "^5.55.1"
     },
     "bin": {
         "webcomponent": "./build.js"
